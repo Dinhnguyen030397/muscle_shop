@@ -1,0 +1,679 @@
+body{
+    margin: 0;
+    font-family: Tahoma;
+}
+.top{
+    width: 100%;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    justify-content: space-between;
+    color: black;
+    font-size: 14px;
+}
+.left_top{
+    width: 45%;
+    justify-content: flex-start; 
+    padding: 0px;
+}
+.right_top{
+    width: 45%;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 0px;
+}
+.top ul{
+    display: flex; 
+    margin: 0px;
+    padding: 0px;
+}
+.top ul li{
+    list-style: none;
+    position: relative;
+}
+.left_top ul li{
+    margin-left: 40px;
+}
+.right_top ul li{
+    margin-left: 40px;
+}
+.right_top ul li:last-child{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.top ul li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 14px;
+    padding: 15px 0px;
+}
+.top p{
+    display: block;
+    color: black;
+    font-size: 14px;
+    padding: 15px 0px;
+    margin: 0px;
+}
+span{
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.top ul li a:hover{
+    color: red;
+}
+.top select{
+    background-color: rgb(236, 236, 236);
+    border: none;
+    color: black;
+    font-size: 14px;
+    margin-top: 16px;
+}
+.top select:focus{
+    outline: unset;
+}
+.gach_dung{
+    margin-top: 14px;
+    margin-left: 9px;
+    height: 20px;
+    border-left: 1.5px solid black;
+}
+.fa-shop{
+    position: absolute;
+    top: 14.5px;
+    left: -26px;
+    font-size: 17px;
+    color: brown;
+}
+.fa-square-phone{
+    position: absolute;
+    top: 14px;
+    left: -23px;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+.fa-square-facebook{
+    position: absolute;
+    top: 14px;
+    left: -23px;
+    font-size: 20px;
+    color: rgb(37, 91, 168);
+}
+.fa-rectangle-list{
+    position: absolute;
+    top: 14px;
+    left: -27px;
+    font-size: 20px;
+    color: rgb(73, 74, 74);
+}
+.fa-earth-asia{ 
+    position: absolute;
+    top: 13px;
+    left: -22px;
+    font-size: 20px;
+    color: rgb(92, 90, 90);
+}
+.fa-user{
+    position: absolute;
+    top: 14px;
+    left: -24px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);  
+}
+.head_menu{
+    display: flex;
+    margin: 20px;
+}
+.logo{
+    display: flex;
+    width: 25%;
+}
+.logo div{
+    width: 20%;
+}
+.logo .cotainer_logo{
+    width: 60%;
+}
+.search{
+    box-sizing: border-box;
+    width: 50%;
+    position: relative;
+}
+.search input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    margin: 20px 0px;
+    padding-left: 30px;
+    border: 1px solid rgb(31, 57, 93);  
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(58, 88, 129);
+}
+.search input::placeholder {
+    font-size: 16px;
+    opacity: 0.7;
+    color: rgb(44, 44, 44);
+}
+input:focus{
+    outline: unset;
+}
+.search a{
+   position: absolute;
+   top: 20px;
+   right: 0px;
+   font-size: 16px;
+   color:  rgb(31, 57, 93);  
+   padding: 8.5px 20px;
+   border-radius: 10px;
+}
+.cart{
+    width: 25%;
+    position: relative;
+    box-sizing: border-box;
+}
+.cart a{
+    position: relative;
+    font-size: 14px;
+    color: rgb(31, 57, 93);
+    margin: 10px 20px;
+    padding: 40px 10px 20px 50px;
+    text-decoration: none;
+    top: 39px;
+    left: 50px;
+}
+.fa-cart-shopping{
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    font-size: 35px;
+    color: rgb(31, 57, 93);
+}
+.number{
+    color: white;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top:15px;
+    left: 30px
+}
+.nav{
+    position: relative;
+}
+.container_menu{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    background-color: #005696;
+    position: relative;
+    z-index: 100;
+}
+.container_menu ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    list-style: none;
+    justify-content: center; 
+}
+.container_menu ul li{
+    position: relative;
+}
+.container_menu ul li a{
+    display: block;
+   text-decoration: none;
+   font-size: 14px;
+   padding: 18px 15px;
+   color: white;
+  
+}
+.container_menu ul li:hover{
+    background-color: rgb(82, 82, 82);;
+    transition: 0.5s;
+}
+.container_menu ul li ul li:hover{
+    background-color: rgb(207, 207, 207);
+    transition: 0.5s;
+}
+.container_menu ul li ul li a:hover {
+    color: black;
+    transition: 0.5s;
+}
+.container_menu ul li a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.list_product ul{
+    display: list-item;
+    display: none;
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    background-color: rgb(82, 82, 82);;
+    width: 200px;
+}
+.list_product ul li a{
+    color: white;
+}
+.list_product:hover ul{
+    display: block;
+}
+footer{
+    box-sizing: border-box;
+    background-color:rgba(101, 101, 101, 0.3);
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 20px 10px;
+    font-size: 14px;
+    background-image: url(/img/bn_ft_3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+    background-position: center;
+ }
+.container_footer{
+    width: 70%;
+    display: flex;
+}
+footer h3{
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0px;
+    margin-left: -20px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px;
+   
+}
+ footer li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+footer ul{
+    padding: 0px;
+    margin: 0px 30px;
+}
+.container_footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+.container_footer ul li:hover a{
+    transform: translateX(20px);
+    transition: 0.5s;
+}
+.company{
+    width: 40%;
+    box-sizing: border-box;
+}
+.company span{
+    font-size: 16px;
+    color: red;
+}
+.sevice{
+    width: 30%;
+    padding-left: 15px;
+}
+.sevice img{
+   margin-top: 15px;
+}
+.info{
+    width: 30%;
+}
+.contact{
+    width: 30%;
+}
+.logo_social a{
+    margin-right: 10px;
+    background-color: none;
+    text-decoration: none;
+}
+.pay{
+    margin-top: 10px;
+}
+main{
+    width: 100%;
+}
+.link{
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+.link a{
+    display: block;
+    text-decoration: none;
+    color: Black;
+    font-size: 14px;
+    padding: 15px 5px;
+}
+.link p{
+    margin: 0;
+    font-size: 14px;
+    padding: 15px 5px;
+}
+.container_content{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.left_content{
+    width: 25%;
+}
+.sub_menu{
+    width: 100%;
+}
+.left_content p{
+    font-weight: 600;
+    margin: 0px ;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-bottom: 1px dotted black;
+}
+.sub_menu ul{
+    margin: 0;
+    padding-left: 0px;
+}
+.sub_menu ul li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+.sub_menu ul li a:hover{
+    color: red;
+}
+.sub_menu ul li ul li:hover{
+    background-color: rgba(255, 255, 255, 0);
+    transform: translateX(20px);
+    transition: 0.5s; 
+}
+.sub_menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 0px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.sub_menu ul li ul li a{
+    margin-left: 40px;
+    font-style: italic;
+    font-weight: 100;
+}
+.sub_menu ul .product_1{
+   color: red;
+}
+.right_content{
+    width: 75%;
+    margin-left: 20px;
+}
+.head_content p{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.info_head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    border-top: 1px solid rgb(203, 203, 203);
+    margin: 20px 0px;
+    color: rgb(90, 89, 89);
+}
+.info_head p{
+    margin: 0;
+}
+.info_head select{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: rgb(90, 89, 89);
+}
+.info_head select:focus{
+    outline: unset;
+}
+.product_content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.item_product{
+    width: 25%;
+    height: max-content;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.item_product:hover{
+    border-color: rgb(64, 63, 63);
+}
+.item_product .title{
+    text-decoration: none;
+    color: black;
+}
+.item_product a{
+    text-decoration: none;
+}
+.item_product .product_reviews i{
+    color: orange;
+}
+.item_product .product_reviews{
+    text-align: center;
+}
+.item_product p{
+   margin: 0px;
+   text-align: center; 
+   margin-top: 5px;
+}
+.item_product .price{
+  color: orangered;
+  font-weight: 700;
+}
+.info_content{
+    border-top: 1.5px solid rgb(210, 210, 210);
+}
+.info_content h3{
+   color: red;
+    margin-bottom: 0px;
+}
+.info_content h4{
+    color: blue;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.info_content p{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.info_content li{
+    margin-bottom: 5px;
+}
+.list_news{
+    display:list-item;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+.item_news{
+    display: flex;
+    margin-bottom: 15px;
+}
+.item_news .img_news{
+    width: 30%;
+}
+.item_news .content_news{
+    padding: 10px;
+    width: 70%;
+    color: rgb(33, 33, 33);
+    font-size: 12px;
+    font-style: italic;
+}
+.item_news .content_news a{
+   text-decoration: none;
+   color: rgb(33, 33, 33);
+   font-style:normal;
+   font-size: 14px;
+}
+.item_news .content_news i:last-child{
+    margin-right: 5px;
+    margin-left: 20px;
+ }
+.showmore_news a{
+    text-decoration: none;
+    color:blue;
+}
+.showmore_news a:hover{
+    color:red;
+    transition: 0.3s;
+}
+.new_content{
+    margin-bottom: 20px;
+}
+.new_content h3{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+.header_news{
+    display: flex;
+    margin: 20px 10px auto;
+}
+.title_new{
+    width: 40%;
+}
+.title_new h4{
+    text-align: center;
+    margin: 0px;
+    color: blue;
+   
+}
+.gach{
+    width: 30%;
+    height: 0.5px;
+    background-color: rgb(115, 115, 115);
+    margin: 0;
+    margin-top: 18px;
+    border: none;
+}
+.right_content{
+    list-style-type: none;
+}
+#menu_1{
+    background-color: red;
+}
+.trademark{
+    margin: 30px 0px;
+}
+.trademark a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.trademark ul {
+    height: 200px;
+    padding: 0px;
+    margin-left: 20px;
+    overflow-y:scroll;
+}
+.trademark ul li{
+    list-style-type: none;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.weight{
+    margin: 30px 0px;
+}
+.weight a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px;
+    border: 1px solid rgb(137, 137, 137);
+    background-color: white;
+    border-radius: 5px;
+}
+.weight a:hover{
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+.weight ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-left: 20px;
+}
+.weight ul li{
+    list-style-type: none;
+    margin: 5px;
+}
+.taste{
+    margin: 30px 0px;
+}
+.taste a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px;
+    border: 1px solid rgb(137, 137, 137);
+    background-color: white;
+    border-radius: 5px;
+}
+.taste a:hover{
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+.taste ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-left: 20px;
+    height: 200px;
+    overflow-y: scroll;
+}
+.taste ul li{
+    list-style-type: none;
+    margin: 5px;
+}
+.origin{
+    margin: 30px 0px;
+}
+.origin a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px;
+    border: 1px solid rgb(137, 137, 137);
+    background-color: white;
+    border-radius: 5px;
+}
+.origin a:hover{
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+.origin ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-left: 20px;
+}
+.origin ul li{
+    list-style-type: none;
+    margin: 5px;
+}
